@@ -1,0 +1,51 @@
+<section class="hero is-dark is-small">
+  <div class="hero-body">
+    <h1 class="title">Tasty Burgers!</h1>
+  </div>
+</section>
+<br>
+<section class="container">
+  <div class="columns">
+    <div class="column is-half">
+      <h2 class="is-size-3">Burgers that have not been eaten, yet...</h2>
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="column is-half">
+      <h2 class="is-size-3">Burgers that have been eaten.</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="column is-full">
+    <h2 class="is-size-4">Add a New Tasty Burger:</h2>
+    <form class="create-form">
+      <br>
+      <div class="form-group is-size-5">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="ca" name="name">
+      </div>
+      <br>
+      <div class="form-group is-size-5">
+        <label for="devoured">Devoured?</label><br>
+        <input type="radio" name="devoured" value="1" checked> Devoured<br>
+        <input type="radio" name="devoured" value="0"> Not Eaten
+      </div>
+
+      <button class="button is-dark is-medium" type="submit">Add Burger</button>
+    </form>
+  </div>
+</section>
