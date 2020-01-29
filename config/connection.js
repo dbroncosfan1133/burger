@@ -5,11 +5,11 @@ var mysql = require("mysql");
 var data = process.env;
 
 var connection = mysql.createConnection({
-    host: data.host,
-    port: data.port,
-    user: data.user,
-    password: data.password,
-    database: data.database
+    host: data.HOST,
+    port: data.PORT,
+    user: data.USER,
+    password: data.PASSWORD,
+    database: data.DATABASE
 });
 
 connection.connect(function(err) {

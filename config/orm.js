@@ -37,7 +37,7 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function(table, cols, vals, cd) {
+    insertOne: function(table, cols, vals, cb) {
         var query = "INSERT INTO " + table;
 
         query += " (";
@@ -73,6 +73,17 @@ var orm = {
           cb(result);
         });
       },
+
+    delete: function(table, condition, cb) {
+      var query = "DELETE FROM " + table + " WHERE " + condition;
+
+      connection.query(query, function(err, result) {
+        if(err) {
+          throw err;
+        }
+        cb(result);
+      });
+    }
 };
 
 module.exports = orm;

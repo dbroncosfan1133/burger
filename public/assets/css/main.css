@@ -1,0 +1,14 @@
+body {
+    background-image: url("../images/burger.jpg");
+    background-size: contain;
+}
+
+.textChange {
+    background-color: #eaec6d;
+    padding-left: 5px;
+}
+
+.burgers {
+    color: black;
+    font-weight: bold;
+}

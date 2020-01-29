@@ -4,4 +4,4 @@ VALUES
     ("Sunnyside Burger", 0),
     ("Yucatan Burger", 0),
     ("Iconic Burger", 0),
-    ("Big Kahuna Burger", 1)
+    ("Big Kahuna Burger", 0)

@@ -1,13 +1,15 @@
 <section class="hero is-dark is-small">
   <div class="hero-body">
-    <h1 class="title">What a Tasty Burger!</h1>
+    <div class="container">
+      <h1 class="title">What a Tasty Burger!</h1>
+    </div>
   </div>
 </section>
 <br>
 <section class="container">
   <div class="columns">
     <div class="column is-half">
-      <h2 class="is-size-3">Burgers that have not been eaten, yet...</h2>
+      <h2 class="is-size-3 has-text-black has-text-weight-bold textChange">Burgers that have not been eaten, yet...</h2>
       <br>
       <ul>
         {{#each burgers}}
@@ -20,7 +22,7 @@
     </div>
 
     <div class="column is-half">
-      <h2 class="is-size-3">Burgers that have been eaten.</h2>
+      <h2 class="is-size-3 has-text-black has-text-weight-bold textChange">Burgers that have been eaten.</h2>
       <br>
       <ul>
         {{#each burgers}}
@@ -33,21 +35,21 @@
     </div>
   </div>
   <hr>
-  <div class="column is-full">
-    <h2 class="is-size-4">Add a New Tasty Burger:</h2>
+  <div class="column is-one-quarter">
+    <h2 class="is-size-4 has-text-black has-text-weight-bold textChange">Add a New Tasty Burger:</h2>
     <form class="create-form">
       <br>
-      <div class="form-group is-size-5">
+      <div class="form-group is-size-5 burgers">
         <label for="burger">Burger Name:</label>
-        <input type="text" id="burger" name="name">
+        <input class="input is-danger is-rounded" type="text" id="burger" name="name">
       </div>
       <br>
-      <div class="form-group is-size-5">
+      {{!-- <div class="form-group is-size-5">
         <label for="devoured">Devoured?</label><br>
         <input type="radio" name="devoured" value="1" checked> Devoured<br>
         <input type="radio" name="devoured" value="0"> Not Eaten
       </div>
-      <br>
+      <br> --}}
       <button class="button is-dark is-medium" type="submit">Add Burger</button>
     </form>
   </div>
