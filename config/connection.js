@@ -9,10 +9,10 @@ if(process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     connection = mysql.createConnection({
-        host: data.host,
-        user: data.user,
-        password: data.password,
-        database: data.database
+        host: "localhost",
+        user: "root",
+        password: "5iQ7Pp9Z$",
+        database: "burgers_db"
     });
 };
 
