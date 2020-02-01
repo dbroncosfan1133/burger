@@ -3,8 +3,7 @@ require("dotenv").config();
 var mysql = require("mysql");
 var connection;
 
-var data = process.env;
-
+//Connection to JawsDB for Heroku and localhost
 if(process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {

@@ -1,5 +1,8 @@
+//Dependencies
 var orm = require("../config/orm.js");
 
+//Create a burger object of functions to pass info into queries in orm.js
+//Passed to burgersController.js 
 var burger = {
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {

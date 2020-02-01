@@ -1,3 +1,4 @@
+//MySql connection import
 var connection = require("../config/connection.js");
 
 function printQuestionMarks(num) {
@@ -25,7 +26,7 @@ function printQuestionMarks(num) {
 
     return arr.toString();
   }
-
+//Functions to query database and return the result
 var orm = {
     selectAll: function(tableInput, cb) {
         var query = "SELECT * FROM " + tableInput + ";";
