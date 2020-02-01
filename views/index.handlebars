@@ -1,16 +1,22 @@
-<section class="hero is-dark is-small">
+<section class="hero is-medium has-bg-img">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">What a Tasty Burger!</h1>
     </div>
   </div>
 </section>
-<br>
-<section class="container">
+<hr>
+<section class="container mainContainer">
+  <div class="columns">
+    <div class="column is-half pageTitle">
+      <h1 class="title is-size-1 has-text-weight-bold has-text-black">What a Tasty Burger!</h1>
+      <h2 class="subtitle is-size-3 has-text-weight-bold has-text-black">Eat and Make New Burgers</h2>
+    </div>
+    <div class="column is-half"></div>
+  </div>
   <div class="columns">
     <div class="column is-half">
       <h2 class="is-size-3 has-text-black has-text-weight-bold textChange">Burgers that have not been eaten, yet...</h2>
-      <br>
+      <hr>
       <ul>
         {{#each burgers}}
         {{#unless devoured}}
@@ -23,7 +29,7 @@
 
     <div class="column is-half">
       <h2 class="is-size-3 has-text-black has-text-weight-bold textChange">Burgers that have been eaten.</h2>
-      <br>
+      <hr>
       <ul>
         {{#each burgers}}
         {{#if devoured}}
@@ -44,13 +50,15 @@
         <input class="input is-danger is-rounded" type="text" id="burger" name="name">
       </div>
       <br>
-      {{!-- <div class="form-group is-size-5">
-        <label for="devoured">Devoured?</label><br>
-        <input type="radio" name="devoured" value="1" checked> Devoured<br>
-        <input type="radio" name="devoured" value="0"> Not Eaten
-      </div>
-      <br> --}}
       <button class="button is-dark is-medium" type="submit">Add Burger</button>
     </form>
   </div>
 </section>
+<hr>
+<footer class="footer has-bg-img">
+  <div class="content has-text-left">
+    <p>
+      <strong>Created by: Curtis Allen</strong>
+    </p>
+  </div>
+</footer>

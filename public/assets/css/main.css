@@ -1,15 +1,32 @@
 body {
-    background-image: url("../images/burger.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url("../images/hamburger.jpg"); */
+    background-color: rgb(134, 103, 72);
+    background-size: contain;
+    overflow: auto;
 }
 
-.textChange {
-    background-color: #eaec6d;
-    padding-left: 5px;
-}
+/* footer {
+    background-image: url("../images/hamburger.jpg");
+    background-size: contain;
+    background-color: rgb(134, 103, 72);
+} */
 
 .burgers {
     color: black;
     font-weight: bold;
+}
+
+.has-bg-img {
+    background-image: url("../images/hamburger.jpg");
+    background-size: contain;
+    background-color: rgb(134, 103, 72);
+}
+
+/* .pageTitle {
+    background-color: rgb(134, 103, 72);
+} */
+
+.mainContainer {
+    background-color: rgb(134, 103, 72);
+    z-index: 1;
 }
